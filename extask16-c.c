@@ -36,10 +36,16 @@ int main()
     if (f == NULL) 
         puts("failed to open file.");
     else 
-        for (int i = 0; i < n; i++)
-        {
-            fwrite(row, sizeof(struct record), n, f);
-        }
+    {           
+                fwrite(row, sizeof(struct record), n, f);
+            /*for(int i = 0; i < n; i++)
+            {
+                fprintf(f,"%s\t\t%s\t\t%d\t\t%d\n", 
+                row[i].drug_name, row[i].indications,
+                row[i].exp_years, row[i].mfg_year);
+            }*/
+            //fwrite(row, sizeof(struct record), n, f);
+    }
     fclose(f);
 
     return 0;
