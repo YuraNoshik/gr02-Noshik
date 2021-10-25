@@ -23,8 +23,7 @@ float v0y = sinf(ra) * v0;
 
 
 #define g 9.8f
-//float x = x0 + v0x * t + (g*t*t);
-//float y = y0 + v0y * t - (g*t*t) /2.0f;
+
 
  float d = v0y * v0y + 4.0f * g / 2.0f * y0;
     printf("d = %f\n", d);
