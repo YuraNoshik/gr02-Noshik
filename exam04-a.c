@@ -1,12 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-double f(double x)
-{
-    return -3.0f * cos(x);
-}
-
+#include <stdlib>
+#include <stdio>
 
 int main()
 {
