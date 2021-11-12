@@ -23,8 +23,6 @@ int main()
     int exact = 0;
     int above = 0;
 
-    
-
     for(int i=0; i < n; i++)
     {
         if(pressure[i] < pnorm) below ++;
