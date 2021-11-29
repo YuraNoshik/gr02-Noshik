@@ -16,7 +16,7 @@ int main()
     int r = 0;
 
     int l = strlen(s);
-    for(int i = 1; i <= l; i++)
+    for(int i = 1; i <= l; i++)  //
     {
         char c = s[i];
         if (o == c)
@@ -39,7 +39,7 @@ int main()
     }
     
     d[di] = '\0';
-    puts(d);
+    puts(d); //
 
     return 0;
 }
