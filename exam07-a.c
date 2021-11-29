@@ -30,11 +30,3 @@ int main()
         printf("Ученик не поступит");
     }
     return 0;
-<<<<<<< HEAD
-}
-
-
-
-=======
-}
->>>>>>> ef14c1fe9c0b8355fdeeec5d887cdbe6bde5ad6c
