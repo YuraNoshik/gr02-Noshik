@@ -15,7 +15,7 @@ struct record tab[rows];
 
 int  main()
 {
-    FILE *f = fopen("exam15-c.txt", "w");
+    FILE *f = fopen("exam15", "w");
     fprintf(f, "os    virt    phy    price\n");
 
     char tmp[32];

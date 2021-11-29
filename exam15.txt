@@ -1,0 +1,4 @@
+OS/2 130 22 3343
+Windows/NT 230 24 2685
+SCO/Unix 110 48 3745
+Windows/NT

@@ -86,7 +86,7 @@ int main()
 
     if(m < 1) printf("not found!\n");
 
-    FILE *f = fopen("extask13-c.txt", "w");
+    FILE *f = fopen("exam13.txt", "w");
 
     fprintf(f, "fio     num\n");
 
