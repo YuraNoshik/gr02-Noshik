@@ -35,9 +35,9 @@ for(int i = 0; i < n; i++)
 }
 printf("\n");
 
-int below = 0;  
-int exact = 0;  
-int above = 0;  
+int below = 0;  //ниже нормы
+int exact = 0;  // нориа
+int above = 0;  //выше нормы
 
 for(int i = 0; i < n; i++)
 {
@@ -52,6 +52,22 @@ for(int i = 0; i < n; i++)
 printf("below: %d\n", below);
 printf("exact: %d\n", exact);
 printf("above: %d\n", above);
+
+printf("sor: ");
+for (int i = n - 1; i >= 0; i--)
+{
+    for (int j = 0; j < i; j++)
+    {
+        if (pressure[j] > pressure[j + 1])
+        {
+            int tmp = pressure[j];
+            pressure[j] = pressure[j + 1];
+            pressure[j + 1] = tmp;
+        }
+    }
+    printf("%d ", pressure[i]);
+}
+printf("\n");
 
 return 0;
 }

@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -13,24 +14,22 @@ int main()
     while(1)
     {
         char s[max_txt];
-        if(fgets(s, max_txt, f) == NULL) break;
+        if (fgets(s, max_txt, f) == NULL) break;
 
-        char *c = strchr(s, '\n'); //
-        if(c != NULL) *c = '\0';
-
-        puts(s);
+        char *c = strchr(s,'\n');
+        if (c != NULL) *c = '\0';
 
         int l = strlen(s);
         if(l > m)
         {
             m = l;
             strcpy(p, s);
+           
         }
     }
-
-    printf("\n");
-    printf("str = %s\n", p);
-    printf("len = %d\n", m);
+ 
+    printf("str = %s\n", p); 
+    printf("lem = %d\n", m);
 
     fclose(f);
 
